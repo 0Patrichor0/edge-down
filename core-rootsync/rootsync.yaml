@@ -1,0 +1,17 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata: # kpt-merge: config-management-system/example-cluster-name
+  name: core
+  namespace: config-management-system
+  annotations:
+    internal.kpt.dev/upstream-identifier: configsync.gke.io|RootSync|config-management-system|example-cluster-name
+    nephio.org/cluster-name: core
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: http://172.18.0.200:3000/nephio/core.git
+    branch: main
+    auth: token
+    secretRef:
+      name: core-access-token-configsync
+    period: 15s

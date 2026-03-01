@@ -13,7 +13,7 @@ spec:
     workspaceName: main
   downstream:
     package: example-cluster
-    repo: mgmt
+    repo: edge01
   injectors:
   - kind: WorkloadCluster
     name: example

@@ -13,7 +13,7 @@ spec:
     workspaceName: main
   downstream:
     package: example-local-path-provisioner
-    repo: edge01
+    repo: mgmt-staging
   injectors:
   - kind: WorkloadCluster
     name: example

@@ -13,7 +13,7 @@ spec:
     workspaceName: main
   downstream:
     package: example-configsync
-    repo: mgmt-staging
+    repo: edge01
   injectors:
   - kind: WorkloadCluster
     name: example
